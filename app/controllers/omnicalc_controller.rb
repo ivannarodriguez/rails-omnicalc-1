@@ -1,4 +1,8 @@
 class OmnicalcController < ApplicationController
+  def backhome
+    render({:template => "new_square_calc"})
+  end
+
   def newsquare
     render({:template => "new_square_calc"})
   end
@@ -20,7 +24,7 @@ class OmnicalcController < ApplicationController
   end
 
   def newpayment
-    render({:template => "new_payment")
+    render({:template => "new_payment"})
   end
 
   def paymentresult
